@@ -1,0 +1,77 @@
+/*=========== blue ===========*/
+.logo a span.theme-color{
+    color: #304fff;
+}
+.main-menu ul.navbar-nav li.active a.theme-color{
+    color: #304fff;
+}
+.custom-navbar.top-nav-collapse .main-menu ul.nav.navbar-nav li.active a.theme-color{
+    color: #304fff;
+   
+}
+
+.footer-text p span.theme-color{
+    color: #304fff;
+}
+ul.work li.active.theme-color{
+    border: 1px solid #304fff;
+}
+ul.work li.theme-color:hover {
+    border: 1px solid #304fff;
+}
+.btn.theme-color, a.btn.theme-color{
+   background: #304fff;
+    color: #fff;
+}
+.btn.theme-color.btn-effect.disabled:hover {
+    color: #fff;
+}
+.btn.theme-color:hover, a.btn.theme-color:hover, .btn.btn-effect:hover {
+   border: 2px solid #304fff;
+    color: #304fff;
+    background: transparent;
+}
+.btn.btn-effect.theme-color.disabled:hover {
+      border: 2px solid #304fff;
+    color: #304fff;
+    background: transparent;
+}
+.author-image p span.theme-color{
+    color: #304fff;
+}
+.about-text h3.theme-color{
+    color: #304fff;
+}
+.servise-icon.theme-color {
+  background: #304fff;
+  color: #fff;
+    
+}
+.single-service:hover .servise-icon.theme-color{
+    background: #fff;
+    color: #000;
+    border: 2px solid #304fff;
+}
+.review-full-area:before {
+  background: #304fff;
+}
+.social-icon a.theme-color:hover{
+    color: #304fff;
+}
+.testimonial-section .owl-dots div.active{
+    background: #304fff;
+}
+.hover-content a.theme-color {
+  background: #304fff;
+
+}
+.hover-content a.theme-color:hover{
+    color: #304fff;
+     background: #fff;
+}
+.work-table.theme-color{
+    border: 1px solid #304fff;
+    
+}
+
+/*=========== end blue ===========*/

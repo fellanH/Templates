@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Documentation Template</title>
+	
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Rong - Personal Portfolio Template&rdquo; Documentation by &ldquo;ThemeLabBD&rdquo;</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Rong - Personal Portfolio Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 01/07/2017<br>
+					By: ThemeLabBD<br>
+					Email: <a href="mailto:mahamuddul.hasan349@gmail.com">mahamuddul.hasan349@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/ThemeLabBD">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>The html template uses Bootstrap v3.3.7 with valid HTMl5 tags. This theme is a responisve layout. All of the information in content area is nested within a class and comes with predefined classes.</p>
+		
+		
+        <div>&lt;!-- START SECTION --&gt;</div>
+        <div>&lt;section id=&quot;section-id&quot; class=&quot;section-class section-pading bg-image&quot;&gt;</div>
+        <div>&lt;div class=&quot;container&quot;&gt;</div>
+        <div>&lt;h2 class=&quot;section-title&quot;&gt;section title&lt;/h2&gt;</div>
+        <div>&lt;div class=&quot;row wow fadeIn animated&quot; data-wow-duration=&quot;2s&quot; data-wow-delay=&quot;0.8&quot; &gt;</div>
+        <div>&lt;div class=&quot;col-lg-12 col-sm-12 col-sm-12 col-xs-12&quot;&gt;</div>
+    
+        <div>&lt;div class=&quot;main-content&quot;&gt;</div>
+
+        Content goes here
+
+        <div>&lt;/div&gt;</div>
+        <div>&lt;/div&gt;</div>
+        <div>&lt;/div&gt;</div>
+        <div>&lt;/div&gt;</div>
+        <div>&lt;/section&gt;&lt;</div>
+
+        <div>&lt;!-- END SECTION --&gt;</div>
+        
+        <h4>Edit logo and menu</h4>
+        <img src="assets/images/logo_and_menu.PNG" alt="logo">
+        <hr>
+        
+        <h4>Edit Welcome Text</h4>
+        <img src="assets/images/welcome_area.PNG" alt="logo">
+        <hr>
+        
+        <h4>Edit about section</h4>
+        <img src="assets/images/about.PNG" alt="about">
+        <hr>
+        
+        <h4>Edit Section title</h4>
+        <img src="assets/images/section_title.PNG" alt="about">
+        <hr>
+        
+        <h4>Edit services section</h4>
+        <img src="assets/images/service.PNG" alt="services">
+        <hr>
+        <h4>Edit Quotes area</h4>
+        <img src="assets/images/quotes.PNG" alt="quates">
+        <hr>
+        
+        <h4>Edit work section</h4>
+        <img src="assets/images/work.PNG" alt="work">
+        <hr>
+        
+        <h4>Edit review section</h4>
+        <img src="assets/images/review.PNG" alt="review">
+        <hr>
+        
+        <h4>Edit contact section</h4>
+        <img src="assets/images/contact.PNG" alt="contact">
+        <hr>
+        
+        <h4>Edit footer section</h4>
+        <img src="assets/images/footer.PNG" alt="portfolio">
+        <hr>
+        
+        
+        
+         <h4>Active contact form</h4>
+        <p>Go to php/form-process and input your email adress for receive email</p>
+        <img src="assets/images/email.PNG" alt="portfolio">
+        <hr>
+		
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>	.main-content {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>I.E.</p>
+
+<pre>	.section-class .main-content {
+		color: #someColor;
+	}
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using three main CSS files in this theme. The first one bootstrap.css. and second one style.css which for this template and the last one is responsive.css.First one (bootstrap.css) which is a css / javascript framework. Second one (style.css) contains all the  stylings for the page also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+
+		<p>The last file (responsive.css) contains all the style for the different layout such as lablet, smartphone etc.</p>  
+
+<pre>	 /*************** INTRO SECTION ******************/
+
+	some code
+
+	/*************** ABOUT SECTION ******************/
+	
+	some code
+	
+	/*************** SKILL SECTION ******************/
+	
+	some code
+	
+	/*************** RESUME SECTION ******************/
+	
+	some code
+	
+	etc, etc. 
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+		
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports three Javascript files.</p>
+		
+		<ol>
+			<li>jQuery main js</li>
+			<li>My custom scripts</li>
+			<li>Some plugin</li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.
+<pre>	[some Javascript goes here...along with an general explanation]
+	[some Javascript goes here...along with an general explanation]
+	[some Javascript goes here...along with an general explanation]
+</pre>
+			</li>
+			<li>In addition to the custom scripts, I implement a few "tried and true" plugins to create the effects. This plugin is packed, so you won't need to manually edit anything in the file. The only necessary thing to know is how to call the method. For example:
+<pre>	[some Javascript goes here...along with an general explanation]</pre>
+			</li>
+		</ol>
+		
+		<hr>
+		
+		
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+            <ul>
+                <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
+                <li><a target="_blank" href="http://jquery.com/">jQuery JavaScript Library</a></li>
+                <li><a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+                <li><a target="_blank" href="https://google.com/fonts">Google Fonts</a></li>
+                <li><a target="_blank" href="https://jqueryvalidation.org/">jQuery Validation Plugin</a></li>
+                <li><a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+                <li><a target="_blank" href="https://daneden.github.io/animate.css">Aminate CSS</a></li>
+                <li><a target="_blank" href="https://wowjs.uk/">WOW JS</a></li>
+                <li><a target="_blank" href="https://vincentgarreau.com/particles.js">Particles JS </a></li>
+
+            </ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>ThemeLabBD</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

@@ -1,0 +1,77 @@
+/*=========== green ===========*/
+.logo a span.theme-color{
+    color: #44b272;
+}
+.main-menu ul.navbar-nav li.active a.theme-color{
+    color: #44b272;
+}
+.custom-navbar.top-nav-collapse .main-menu ul.nav.navbar-nav li.active a.theme-color{
+    color: #44b272;
+   
+}
+
+.footer-text p span.theme-color{
+    color: #44b272;
+}
+ ul.work li.active.theme-color{
+    border: 1px solid #44b272;
+}
+ul.work li.theme-color:hover {
+    border: 1px solid #44b272;
+}
+.btn.theme-color, a.btn.theme-color{
+    background: #44b272;
+    color: #fff;
+}
+ .btn.theme-color.btn-effect.disabled:hover {
+    color: #fff;
+}
+ .btn.theme-color:hover, a.btn.theme-color:hover, .btn.btn-effect:hover {
+   border: 2px solid #44b272;
+    color: #44b272;
+    background: transparent;
+}
+.btn.btn-effect.theme-color.disabled:hover {
+      border: 2px solid #44b272;
+    color: #44b272;
+    background: transparent;
+}
+.author-image p span.theme-color{
+    color: #44b272;
+}
+.about-text h3.theme-color{
+    color: #44b272;
+}
+.servise-icon.theme-color {
+  background: #44b272;
+  color: #fff;
+    
+}
+.single-service:hover .servise-icon.theme-color{
+    background: #fff;
+    color: #000;
+    border: 2px solid #44b272;
+}
+.review-full-area:before {
+  background: #44b272;
+}
+.social-icon a.theme-color:hover{
+    color: #44b272;
+}
+.testimonial-section .owl-dots div.active{
+    background: #44b272;
+}
+.hover-content a.theme-color {
+  background: #44b272;
+
+}
+.hover-content a.theme-color:hover{
+    color: #44b272;
+     background: #fff;
+}
+.work-table.theme-color{
+    border: 1px solid #44b272;
+    
+    
+}
+/*=========== end green ===========*/
