@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Towy</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body class="theme-dashboard">
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--		
+		<ul>
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<header class="page_header_side page_header_side_sticked active-slide-side-header ds">
+				<span class="toggle_menu_side toggler_light header-slide">
+					<span></span>
+				</span>
+				<div class="scrollbar-macosx">
+					<div class="side_header_inner">
+						<div class="greylinks">
+							<!-- user -->
+
+							<div class="user-menu">
+								<div class="user-menu-media">
+									<img src="images/team/01.jpg" alt="">
+								</div>
+								<div class="user-menu-info">
+									<h4>Vlad Andersen</h4>
+									<ul class="nav menu-side-click">
+										<li class="active">
+											<a href="#">
+												Administrator
+											</a>
+											<ul>
+												<li>
+													<a href="admin_profile.html">
+														<i class="fa fa-user"></i>
+														Profile
+													</a>
+												</li>
+												<li>
+													<a href="admin_profile_edit.html">
+														<i class="fa fa-edit"></i>
+														Edit Profile
+													</a>
+												</li>
+												<li>
+													<a href="admin_inbox.html">
+														<i class="fa fa-envelope-o"></i>
+														Inbox
+													</a>
+												</li>
+												<li>
+													<a href="admin_signin.html">
+														<i class="fa fa-sign-out"></i>
+														Log Out
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- main side nav start -->
+							<nav class="mainmenu_side_wrapper">
+								<h3 class="main_bg_color2">Dashboard</h3>
+								<ul class="nav menu-side-click">
+									<li class="active">
+										<a href="admin_index.html">
+											<i class="fa fa-th-large"></i>
+											Dashboard
+										</a>
+
+									</li>
+								</ul>
+
+								<h3 class="dark_bg_color">Pages</h3>
+								<ul class="nav menu-side-click">
+									<li>
+										<a href="#">
+											<i class="fa fa-user"></i>
+											Account
+										</a>
+										<ul>
+											<li>
+												<a href="admin_profile.html">
+													Profile
+												</a>
+											</li>
+											<li>
+												<a href="admin_profile_edit.html">
+													Edit Profile
+												</a>
+											</li>
+											<li>
+												<a href="admin_inbox.html">
+													Inbox
+												</a>
+											</li>
+											<li>
+												<a href="admin_signin.html">
+													Sign In
+												</a>
+											</li>
+											<li>
+												<a href="admin_signup.html">
+													Sign Up
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="admin_posts.html">
+											<i class="fa fa-file-text"></i>
+											Posts
+										</a>
+										<ul>
+											<li>
+												<a href="admin_posts.html">
+													Posts
+												</a>
+											</li>
+											<li>
+												<a href="admin_post.html">
+													Single Post
+												</a>
+											</li>
+
+										</ul>
+									</li>
+									<li>
+										<a href="admin_products.html">
+											<i class="fa fa-suitcase"></i>
+											Products
+										</a>
+										<ul>
+											<li>
+												<a href="admin_products.html">
+													Products
+												</a>
+											</li>
+											<li>
+												<a href="admin_product.html">
+													Single Product
+												</a>
+											</li>
+
+										</ul>
+									</li>
+									<li>
+										<a href="admin_orders.html">
+											<i class="fa fa-shopping-cart"></i>
+											Orders
+										</a>
+										<ul>
+											<li>
+												<a href="admin_orders.html">
+													Orders
+												</a>
+											</li>
+											<li>
+												<a href="admin_order.html">
+													Single Order
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="admin_comments.html">
+											<i class="fa fa-comment"></i>
+											Comments
+										</a>
+										<ul>
+											<li>
+												<a href="admin_comments.html">
+													Comments
+												</a>
+											</li>
+											<li>
+												<a href="admin_comment.html">
+													Single Comment
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="admin_faq.html">
+											<i class="fa fa-support"></i>
+											FAQ
+										</a>
+									</li>
+								</ul>
+
+								<h3 class="dark_bg_color">UI Elements</h3>
+								<ul class="nav menu-side-click">
+									<li>
+										<a href="admin_tables.html">
+											<i class="fa fa-table"></i>
+											Tables
+										</a>
+									</li>
+									<li>
+										<a href="admin_forms.html">
+											<i class="fa fa-check-square-o"></i>
+											Forms
+										</a>
+									</li>
+									<li>
+										<a href="admin_bootstrap.html">
+											<i class="fa fa-cog"></i>
+											Bootstrap
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<!-- eof main side nav -->
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<header class="page_header header_white">
+
+				<div class="widget widget_search">
+					<form method="get" class="searchform form-inline" action="./">
+						<div class="form-group">
+							<label class="screen-reader-text" for="widget-search-header">Search for:</label>
+							<input id="widget-search-header" type="text" value="" name="search" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="theme_button">Search</button>
+					</form>
+				</div>
+
+
+				<div class="pull-right big-header-buttons">
+					<ul class="inline-dropdown inline-block">
+						<li class="dropdown header-notes-dropdown">
+							<a class="header-button" id="header-messages" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+								<i class="fa fa-envelope grey"></i>
+								<span class="header-button-text">Inbox</span>
+								<span class="header-dropdown-number">
+									10
+								</span>
+							</a>
+
+							<div class="dropdown-menu" role="menu" aria-labelledby="header-messages">
+								<ul class="list1 no-bullets no-top-border no-bottom-border bottommargin_0">
+
+									<li>
+										<div class="media">
+											<div class="media-left">
+												<img src="images/team/01.jpg" alt="...">
+											</div>
+											<div class="media-body">
+												<h5 class="media-heading">
+													Alex Walker
+													<small>2 hours ago</small>
+												</h5>
+												<div class="one-line-text">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, corporis. Voluptatibus odio perspiciatis non quisquam provident, quasi eaque officia.
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="media">
+											<div class="media-left">
+												<img src="images/team/02.jpg" alt="...">
+											</div>
+											<div class="media-body">
+												<h5 class="media-heading">
+													Janet C. Donnalds
+													<small>5 hours ago</small>
+												</h5>
+												<div class="one-line-text">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque dolor laboriosam dolores magnam mollitia, voluptatibus inventore accusamus illo.
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="media">
+											<div class="media-left">
+												<img src="images/team/03.jpg" alt="...">
+											</div>
+											<div class="media-body">
+												<h5 class="media-heading">
+													Victoria Grow
+													<small>1 day ago</small>
+												</h5>
+												<div class="one-line-text">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, esse, magni aliquam quisquam modi delectus veritatis est ut culpa minus repellendus.
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="text-center darklinks">
+											<a href="admin_inbox.html">View All</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="dropdown header-notes-dropdown">
+							<a class="header-button" id="header-notes" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+								<i class="fa fa-bell grey"></i>
+								<span class="header-button-text">Messages</span>
+								<span class="header-dropdown-number">
+									6
+								</span>
+							</a>
+
+							<div class="dropdown-menu" role="menu" aria-labelledby="header-notes">
+								<ul class="list1 no-bullets no-top-border no-bottom-border bottommargin_0">
+									<li>
+										<div class="media small-teaser">
+											<div class="media-left">
+												<div class="teaser_icon label-success round">
+													<i class="fa fa-shopping-cart"></i>
+												</div>
+											</div>
+											<div class="media-body">
+												<span class="grey">
+													New order
+												</span>
+												<small class="pull-right">2 minutes ago</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="media small-teaser">
+											<div class="media-left">
+												<div class="teaser_icon label-success round">
+													<i class="fa fa-user"></i>
+												</div>
+											</div>
+											<div class="media-body">
+												<span class="grey">
+													New user registered
+												</span>
+												<small class="pull-right">3 minutes ago</small>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="media small-teaser">
+											<div class="media-left">
+												<div class="teaser_icon label-danger round">
+													<i class="fa fa-bolt"></i>
+												</div>
+											</div>
+											<div class="media-body">
+												<span class="grey">
+													Server overloaded
+												</span>
+												<small class="pull-right">5 minutes ago</small>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="media small-teaser">
+											<div class="media-left">
+												<div class="teaser_icon label-warning round">
+													<i class="fa fa-bell-o"></i>
+												</div>
+											</div>
+											<div class="media-body">
+												<span class="grey">
+													Long database query
+												</span>
+												<small class="pull-right">5 minutes ago</small>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="media small-teaser">
+											<div class="media-left">
+												<div class="teaser_icon label-success round">
+													<i class="fa fa-user"></i>
+												</div>
+											</div>
+											<div class="media-body">
+												<span class="grey">
+													New user registered
+												</span>
+												<small class="pull-right">8 minutes ago</small>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="text-center darklinks">
+											<a href="#">View All</a>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+						<li class="dropdown user-dropdown-menu">
+							<a class="header-button" id="user-dropdown-menu" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+								<i class="fa fa-user grey"></i>
+								<span class="header-button-text">User</span>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="user-dropdown-menu">
+								<ul class="nav greylinks">
+									<li>
+										<a href="admin_profile.html">
+											<i class="fa fa-user"></i>
+											Profile
+										</a>
+									</li>
+									<li>
+										<a href="admin_profile_edit.html">
+											<i class="fa fa-edit"></i>
+											Edit Profile
+										</a>
+									</li>
+									<li>
+										<a href="admin_inbox.html">
+											<i class="fa fa-envelope-o"></i>
+											Inbox
+										</a>
+									</li>
+									<li>
+										<a href="admin_signin.html">
+											<i class="fa fa-sign-out"></i>
+											Log Out
+										</a>
+									</li>
+								</ul>
+
+							</div>
+
+						</li>
+
+						<li class="dropdown visible-xs-inline-block">
+							<a href="#" class="search_modal_button header-button">
+								<i class="fa fa-search grey"></i>
+								<span class="header-button-text">Search</span>
+							</a>
+						</li>
+
+
+					</ul>
+				</div>
+				<!-- eof .header_right_buttons -->
+
+			</header>
+
+			<section class="ls ms section_padding_top_50 section_padding_bottom_50 columns_padding_5">
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Forms
+								<small>included</small>
+							</h3>
+						</div>
+					</div>
+					<!-- .row -->
+
+
+					<div class="row">
+						<div class="col-xs-12 col-md-6">
+
+							<!-- Basic form -->
+							<h4>Basic form</h4>
+							<div class="with_background with_padding">
+
+								<form>
+									<div class="form-group">
+										<label for="exampleInputEmail1">Email address:</label>
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Password:</label>
+										<input type="password" class="form-control" id="exampleInputPassword1">
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="checkbox_1" checked="">
+										<label for="checkbox_1">Remember me</label>
+									</div>
+									<button type="submit" class="theme_button">Submit</button>
+								</form>
+							</div>
+							<!-- .with_background -->
+
+
+							<h4>Basic form with placeholders</h4>
+							<div class="with_background with_padding">
+
+								<form>
+									<div class="form-group has-placeholder">
+										<label for="exampleInputEmail2">Email address:</label>
+										<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+									</div>
+									<div class="form-group has-placeholder">
+										<label for="exampleInputPassword2">Password:</label>
+										<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="checkbox_2" checked="">
+										<label for="checkbox_2">Remember me</label>
+									</div>
+									<button type="submit" class="theme_button">Submit</button>
+								</form>
+							</div>
+							<!-- .with_background -->
+
+							<h4>Basic form with input icons and placeholders</h4>
+							<div class="with_background with_padding">
+
+								<form>
+									<div class="form-group has-placeholder">
+										<label for="exampleInputEmail4">Email address:</label>
+										<i class="grey fa fa-envelope-o"></i>
+										<input type="email" class="form-control" id="exampleInputEmail4" placeholder="Email">
+									</div>
+									<div class="form-group has-placeholder">
+										<label for="exampleInputPassword4">Password:</label>
+										<i class="grey fa fa-pencil-square-o"></i>
+										<input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="checkbox_4" checked="">
+										<label for="checkbox_4">Remember me</label>
+									</div>
+									<button type="submit" class="theme_button">Submit</button>
+								</form>
+							</div>
+							<!-- .with_background -->
+
+							<!-- Inline form -->
+							<h4>Inline form</h4>
+							<div class="with_background with_padding">
+
+								<form class="form-inline">
+									<div class="form-group">
+										<label class="sr-only" for="exampleInputEmail3">Email address:</label>
+										<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="exampleInputPassword3">Password:</label>
+										<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+									</div>
+									<button type="submit" class="theme_button color1">Submit</button>
+								</form>
+							</div>
+							<!-- .with_background -->
+
+						</div>
+						<!-- .col-* -->
+
+						<div class="col-xs-12 col-md-6">
+
+							<!-- Horizontal form -->
+							<h4>Horizontal form</h4>
+							<div class="with_background with_padding">
+
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label for="inputEmail6" class="col-sm-2 control-label">Email:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="inputEmail6" placeholder="Email">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword6" class="col-sm-2 control-label">Password:</label>
+										<div class="col-sm-10">
+											<input type="password" class="form-control" id="inputPassword6" placeholder="Password">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<div class="checkbox">
+												<input type="checkbox" id="checkbox_6">
+												<label for="checkbox_6">Remember me:</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="submit" class="theme_button">Submit</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!-- .with_background -->
+
+							<!-- Supported controls -->
+							<h4>Supported controls</h4>
+							<div class="with_background with_padding">
+
+								<form>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Text input">
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" rows="3" placeholder="Message"></textarea>
+									</div>
+									<h5>Styled checkboxes and radio buttons:</h5>
+									<div class="checkbox">
+										<input type="checkbox" id="demoCheckbox_3">
+										<label for="demoCheckbox_3">
+											Option one is this and that—be sure to include why it's great
+										</label>
+									</div>
+									<div class="checkbox disabled">
+										<input type="checkbox" id="demoCheckbox_4" disabled="">
+										<label for="demoCheckbox_4">
+											Option two is disabled
+										</label>
+									</div>
+
+									<div class="radio">
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+										<label for="optionsRadios1">
+											Option one is this and that—be sure to include why it's great
+										</label>
+									</div>
+									<div class="radio">
+										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										<label for="optionsRadios2">
+											Option two can be something else and selecting it will deselect option one
+										</label>
+									</div>
+									<div class="radio disabled">
+										<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+										<label for="optionsRadios3">
+											Option three is disabled
+										</label>
+									</div>
+
+									<h5>Default checkboxes and radio buttons with labels with "for" attributes</h5>
+
+									<div class="checkbox">
+										<label for="demoCheckboxDefault_3">
+											Option one is this and that—be sure to include why it's great
+										</label>
+										<input type="checkbox" id="demoCheckboxDefault_3">
+									</div>
+									<div class="checkbox disabled">
+										<label for="demoCheckboxDefault_4">
+											Option two is disabled
+										</label>
+										<input type="checkbox" id="demoCheckboxDefault_4" disabled="">
+									</div>
+
+									<div class="radio">
+										<label for="optionsRadiosDefault1">
+											Option one is this and that—be sure to include why it's great
+										</label>
+										<input type="radio" name="optionsRadiosDefault" id="optionsRadiosDefault1" value="option1" checked="">
+									</div>
+									<div class="radio">
+										<label for="optionsRadiosDefault2">
+											Option two can be something else and selecting it will deselect option one
+										</label>
+										<input type="radio" name="optionsRadiosDefault" id="optionsRadiosDefault2" value="option2">
+									</div>
+									<div class="radio disabled">
+										<label for="optionsRadiosDefault3">
+											Option three is disabled
+										</label>
+										<input type="radio" name="optionsRadiosDefault" id="optionsRadiosDefault3" value="option3" disabled="">
+									</div>
+
+									<h5>Default checkboxes and radio buttons with inputs in labels:</h5>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="demoCheckboxDefaultInput_3"> Option one is this and that—be sure to include why it's great
+										</label>
+									</div>
+									<div class="checkbox disabled">
+										<label>
+											<input type="checkbox" id="demoCheckboxDefaultInput_4" disabled=""> Option two is disabled
+										</label>
+									</div>
+
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadiosDefaultLabel" id="optionsRadiosDefaultLabel1" value="option1" checked=""> Option one is this and that—be sure to include why it's great
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadiosDefaultLabel" id="optionsRadiosDefaultLabel2" value="option2"> Option two can be something else and selecting it will deselect option one
+										</label>
+									</div>
+									<div class="radio disabled">
+										<label>
+											<input type="radio" name="optionsRadiosDefaultLabel" id="optionsRadiosDefaultLabel3" value="option3" disabled=""> Option three is disabled
+										</label>
+									</div>
+
+									<h5>Selects</h5>
+
+									<div class="form-group">
+										<select class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<select multiple="" class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</form>
+							</div>
+
+						</div>
+						<!-- .col-* -->
+					</div>
+					<!-- .row -->
+
+
+				</div>
+				<!-- .container -->
+			</section>
+
+			<section class="ls">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							&copy; Copyrights 2017
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/vendor/Chart.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/admin-charts.js"></script>
+
+</body>
+
+</html>
