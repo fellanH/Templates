@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Towy</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--		
+		<ul>
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<header class="page_header header_darkgrey header_logo_center toggler_right menu_justify">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-left text-md-center">
+							<div class="logo_wrapper">
+
+								<a href="./" class="logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo_text">
+										<span class="highlight">24/7 TOWY</span>
+										<span>Towing Services</span>
+									</span>
+								</a>
+
+							</div>
+							<!-- header toggler -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li class="active">
+										<a href="index.html">Home</a>
+										<ul>
+											<li>
+												<a href="index.html">MultiPage</a>
+											</li>
+											<li>
+												<a href="index_singlepage.html">Single Page</a>
+											</li>
+											<li>
+												<a href="admin_index.html">Admin Dashboard</a>
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<a href="about.html">Pages</a>
+										<ul>
+
+											<!-- features -->
+											<li>
+												<a href="shortcodes_teasers.html">Shortcodes &amp; Widgets</a>
+												<ul>
+													<li>
+														<a href="shortcodes_typography.html">Typography</a>
+													</li>
+													<li>
+														<a href="shortcodes_buttons.html">Buttons</a>
+													</li>
+													<li>
+														<a href="shortcodes_pricing.html">Pricing</a>
+													</li>
+													<li>
+														<a href="shortcodes_teasers.html">Teasers</a>
+													</li>
+													<li>
+														<a href="shortcodes_progress.html">Progress</a>
+													</li>
+													<li>
+														<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+													</li>
+													<li>
+														<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+													</li>
+													<li>
+														<a href="shortcodes_widgets.html">Widgets</a>
+													</li>
+													<li>
+														<a href="shortcodes_animation.html">Animation</a>
+													</li>
+													<li>
+														<a href="shortcodes_icons.html">Template Icons</a>
+													</li>
+													<li>
+														<a href="shortcodes_socialicons.html">Social Icons</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof features -->
+
+											<li>
+												<a href="about.html">About</a>
+											</li>
+
+											<li>
+												<a href="testimonials.html">Testimonials</a>
+											</li>
+
+											<li>
+												<a href="services.html">Our Services</a>
+												<ul>
+													<li>
+														<a href="services.html">Services</a>
+													</li>
+													<li>
+														<a href="service-single.html">Single Service</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="timetable.html">Timetable</a>
+											</li>
+
+
+											<!-- shop -->
+											<li>
+												<a href="shop-right.html">Shop</a>
+												<ul>
+													<li>
+														<a href="shop-right.html">Shop</a>
+													</li>
+													<li>
+														<a href="product-right.html">Single Product</a>
+													</li>
+													<li>
+														<a href="cart-right.html">Shopping Cart</a>
+													</li>
+													<li>
+														<a href="checkout-right.html">Checkout</a>
+													</li>
+													<li>
+														<a href="register.html">Registration</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof shop -->
+
+
+											<!-- events -->
+											<li>
+												<a href="events-left.html">Events</a>
+												<ul>
+													<li>
+														<a href="events-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="events-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="events-full.html">Full Width</a>
+													</li>
+													<li>
+														<a href="event-single-left.html">Single Event</a>
+														<ul>
+															<li>
+																<a href="event-single-left.html">Left Sidebar</a>
+															</li>
+															<li>
+																<a href="event-single-right.html">Right Sidebar</a>
+															</li>
+															<li>
+																<a href="event-single-full.html">Full Width</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<!-- eof events -->
+
+											<li>
+												<a href="comingsoon1.html">Comingsoon</a>
+												<ul>
+													<li>
+														<a href="comingsoon1.html">Comingsoon</a>
+													</li>
+													<li>
+														<a href="comingsoon2.html">Comingsoon 2</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="faq.html">FAQ</a>
+												<ul>
+													<li>
+														<a href="faq.html">FAQ</a>
+													</li>
+													<li>
+														<a href="faq2.html">FAQ 2</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="404.html">404</a>
+												<ul>
+													<li>
+														<a href="404.html">404</a>
+													</li>
+													<li>
+														<a href="4042.html">404 2</a>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof pages -->
+
+									<li>
+										<a href="#">Features</a>
+										<div class="mega-menu">
+											<ul class="mega-menu-row">
+												<li class="mega-menu-col">
+													<a href="#">Headers</a>
+													<ul>
+														<li>
+															<a href="header1.html">Header Type 1</a>
+														</li>
+														<li>
+															<a href="header2.html">Header Type 2</a>
+														</li>
+														<li>
+															<a href="header3.html">Header Type 3</a>
+														</li>
+														<li>
+															<a href="header4.html">Header Type 4</a>
+														</li>
+														<li>
+															<a href="header5.html">Header Type 5</a>
+														</li>
+														<li>
+															<a href="header6.html">Header Type 6</a>
+														</li>
+														<li>
+															<a href="header7.html">Header Type 7</a>
+														</li>
+														<li>
+															<a href="header8.html">Header Type 8</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="#">Side Menus</a>
+													<ul>
+														<li>
+															<a href="header_side1.html">Slide Left Light</a>
+														</li>
+														<li>
+															<a href="header_side2.html">Slide Right Light</a>
+														</li>
+														<li>
+															<a href="header_side3.html">Push Left Light</a>
+														</li>
+														<li>
+															<a href="header_side4.html">Push Right Light</a>
+														</li>
+														<li>
+															<a href="header_side5.html">Slide Left Dark</a>
+														</li>
+														<li>
+															<a href="header_side6.html">Slide Right Dark</a>
+														</li>
+														<li>
+															<a href="header_side7.html">Push Left Dark</a>
+														</li>
+														<li>
+															<a href="header_side8.html">Push Right Dark</a>
+														</li>
+														<li>
+															<a href="header_side_superfish.html">Superfish Menu</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="breadcrumbs1.html">Breadcrumbs</a>
+													<ul>
+														<li>
+															<a href="breadcrumbs1.html">Breadcrumbs 1</a>
+														</li>
+														<li>
+															<a href="breadcrumbs2.html">Breadcrumbs 2</a>
+														</li>
+														<li>
+															<a href="breadcrumbs3.html">Breadcrumbs 3</a>
+														</li>
+														<li>
+															<a href="breadcrumbs4.html">Breadcrumbs 4</a>
+														</li>
+														<li>
+															<a href="breadcrumbs5.html">Breadcrumbs 5</a>
+														</li>
+														<li>
+															<a href="breadcrumbs6.html">Breadcrumbs 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="footer1.html">Footers</a>
+													<ul>
+														<li>
+															<a href="footer1.html">Footer Type 1</a>
+														</li>
+														<li>
+															<a href="footer2.html">Footer Type 2</a>
+														</li>
+														<li>
+															<a href="footer3.html">Footer Type 3</a>
+														</li>
+														<li>
+															<a href="footer4.html">Footer Type 4</a>
+														</li>
+														<li>
+															<a href="footer5.html">Footer Type 5</a>
+														</li>
+														<li>
+															<a href="footer6.html">Footer Type 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="copyright1.html">Copyrights</a>
+
+													<ul>
+														<li>
+															<a href="copyright1.html">Copyrights 1</a>
+														</li>
+														<li>
+															<a href="copyright2.html">Copyrights 2</a>
+														</li>
+														<li>
+															<a href="copyright3.html">Copyrights 3</a>
+														</li>
+														<li>
+															<a href="copyright4.html">Copyrights 4</a>
+														</li>
+														<li>
+															<a href="copyright5.html">Copyrights 5</a>
+														</li>
+													</ul>
+												</li>
+
+											</ul>
+										</div>
+										<!-- eof mega menu -->
+									</li>
+									<!-- eof features -->
+
+									<!-- blog -->
+									<li>
+										<a href="blog-right.html">Blog</a>
+										<ul>
+
+											<li>
+												<a href="blog-right.html">Right Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-left.html">Left Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-full.html">No Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-mosaic.html">Blog Grid</a>
+											</li>
+
+											<li>
+												<a href="blog-single-right.html">Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="blog-single-video-right.html">Video Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-video-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof blog -->
+
+									<!-- gallery -->
+									<li>
+										<a href="gallery-regular.html">Gallery</a>
+										<ul>
+											<!-- Gallery regular -->
+											<li>
+												<a href="gallery-regular.html">Gallery Regular</a>
+												<ul>
+													<li>
+														<a href="gallery-regular.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-regular-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-regular-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery regular -->
+
+											<!-- Gallery full width -->
+											<li>
+												<a href="gallery-fullwidth.html">Gallery Full Width</a>
+												<ul>
+													<li>
+														<a href="gallery-fullwidth.html">2 column</a>
+													</li>
+													<li>
+														<a href="gallery-fullwidth-3-cols.html">3 columns</a>
+													</li>
+													<li>
+														<a href="gallery-fullwidth-4-cols.html">4 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery full width -->
+
+											<!-- Gallery extended -->
+											<li>
+												<a href="gallery-extended.html">Gallery Extended</a>
+												<ul>
+													<li>
+														<a href="gallery-extended.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-extended-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-extended-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery extended -->
+
+											<!-- Gallery carousel -->
+											<li>
+												<a href="gallery-carousel.html">Gallery Carousel</a>
+												<ul>
+													<li>
+														<a href="gallery-carousel.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-carousel-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-carousel-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery carousel -->
+
+											<!-- Gallery tile -->
+											<li>
+												<a href="gallery-tile.html">Gallery Tile</a>
+											</li>
+											<!-- eof Gallery tile -->
+
+											<!-- Gallery left sidebar -->
+											<li>
+												<a href="gallery-left.html">Gallery Left Sidebar</a>
+												<ul>
+													<li>
+														<a href="gallery-left.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-left-2-cols.html">2 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery left sidebar -->
+
+											<!-- Gallery right sidebar -->
+											<li>
+												<a href="gallery-right.html">Gallery Right Sidebar</a>
+												<ul>
+													<li>
+														<a href="gallery-right.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-right-2-cols.html">2 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery right sidebar -->
+
+											<!-- Gallery item -->
+											<li>
+												<a href="gallery-single.html">Gallery Item</a>
+												<ul>
+													<li>
+														<a href="gallery-single.html">Style 1</a>
+													</li>
+													<li>
+														<a href="gallery-single2.html">Style 2</a>
+													</li>
+													<li>
+														<a href="gallery-single3.html">Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery item -->
+										</ul>
+									</li>
+									<!-- eof Gallery -->
+
+									<!-- contacts -->
+									<li>
+										<a href="contact.html">Contact</a>
+										<ul>
+											<li>
+												<a href="contact.html">Contact 1</a>
+											</li>
+											<li>
+												<a href="contact2.html">Contact 2</a>
+											</li>
+											<li>
+												<a href="contact3.html">Contact 3</a>
+											</li>
+											<li>
+												<a href="contact4.html">Contact 4</a>
+											</li>
+										</ul>
+									</li>
+									<!-- eof contacts -->
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="page_breadcrumbs cs background_cover section_padding_top_40 section_padding_bottom_40">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>Single Item 3</h2>
+							<ol class="breadcrumb">
+								<li>
+									<a href="./">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#">Gallery</a>
+								</li>
+								<li class="active">Single Item 3</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="ls section_padding_top_100 section_padding_bottom_100 columns_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-thumbnail bottommargin_40">
+								<img src="images/gallery/01.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8">
+							<article>
+
+								<h1 class="entry-title">
+									<a href="blog-single-right.html" rel="bookmark">Gallery Item Title</a>
+								</h1>
+
+								<header class="entry-header">
+
+									<div class="entry-meta item-meta">
+
+										<span class="author greylinks">
+											By
+											<a href="blog-right.html">Admin</a>
+										</span>
+
+										<span class="date">
+											<time datetime="2017-01-13T15:05:23+00:00" class="entry-date">
+												Jan 13, 2017
+											</time>
+										</span>
+
+										<div class="categories-links small-text">
+											<a rel="category" href="blog-right.html">Category 1</a>
+											<a rel="category" href="blog-right.html">Category 2</a>
+										</div>
+
+
+									</div>
+									<!-- .entry-meta -->
+
+									<div class="muted_background post-adds">
+										<div class="dropdown inline-block">
+											<a href="#" data-target="#" class="share_button" id="share_button_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="fa fa-share"></i>
+											</a>
+											<div class="dropdown-menu" aria-labelledby="share_button_1">
+												<div class="share_buttons">
+													<a href="https://www.facebook.com/sharer.php?u=http://example.com" class="social-icon color-bg-icon soc-facebook" target="_blank"></a>
+													<a href="https://twitter.com/intent/tweet?url=http://example.com" class="social-icon color-bg-icon soc-twitter" target="_blank"></a>
+													<a href="https://plus.google.com/share?url=http://example.com" class="social-icon color-bg-icon soc-google" target="_blank"></a>
+													<a href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com" class="social-icon color-bg-icon soc-pinterest" target="_blank"></a>
+													<a href="https://www.linkedin.com/shareArticle?url=http://example.com" class="social-icon color-bg-icon soc-linkedin" target="_blank"></a>
+													<a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://example.com" class="social-icon color-bg-icon soc-tumblr" target="_blank"></a>
+													<a href="https://reddit.com/submit?url=http://example.com" class="social-icon color-bg-icon soc-reddit" target="_blank"></a>
+												</div>
+												<!-- eof .share_buttons -->
+											</div>
+											<!-- eof .dropdown-menu -->
+										</div>
+										<!-- eof .dropdown -->
+										<span data-id="1">
+											<a href="#" class="like_button like_active_button">
+												<i class="fa fa-thumbs-up"></i>
+											</a>
+										</span>
+										<span class="votes_count votes_count_300">
+											<span class="item-likes-count">0</span>
+											<span class="item-likes-word">Likes</span>
+										</span>
+										<span class="views-count main_bg_color pull-right">
+											<span class="item-views-count">5</span>
+											<span class="item-views-word">Views</span>
+										</span>
+										<span class="comments-link greylinks pull-right">
+											<a href="#comments">
+												5 Comments
+											</a>
+										</span>
+									</div>
+
+								</header>
+								<!-- .entry-header -->
+
+
+								<div class="entry-excerpt">
+									<p>
+										Namber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+									</p>
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergrno sea takimata
+									sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua vero eos et accusam et justo duo dolores.</p>
+
+								<blockquote>
+									“Chicken venison pastrami shankle fatback meatball pancetta beef. Ground round bacon t-bone prosciutto strip steak pork.”
+
+									<div class="item-meta topmargin_30">
+										<h5 class="small-text muli bold margin_0">
+											<a href="team-single.html">Bekka Argus</a>
+										</h5>
+										<p class="highlight">Senior Attorney</p>
+									</div>
+								</blockquote>
+
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscinged diam nonumy eirmod tempor invidunt utlabore dolore magna aliquyam erat, sed diam voluptua. At vero eoet accusam esto clitakasd gubergren nea takimata sanctus est lorem ipsum.</p>
+
+							</article>
+
+							<div class="items-nav display_table_md darklinks bottommargin_60">
+								<div class="media display_table_cell_md prev-item">
+									<div class="media-left media-middle">
+										<a href="gallery-single3.html">
+											<i class="fa fa-angle-left position-absolute"></i>
+											<img src="images/recent_post1.jpg" alt="">
+										</a>
+									</div>
+									<div class="media-body media-middle">
+										Previous Item
+										<h4>
+											<a href="gallery-single3.html">Gallery Item Title</a>
+										</h4>
+									</div>
+								</div>
+
+								<div class="media display_table_cell_md next-item text-right">
+									<div class="media-body media-middle">
+										Next Item
+										<h4>
+											<a href="gallery-single3.html">Gallery Item Title</a>
+										</h4>
+									</div>
+									<div class="media-right media-middle">
+										<a href="gallery-single3.html" class="next">
+											<img src="images/recent_post2.jpg" alt="">
+											<i class="fa fa-angle-right position-absolute"></i>
+										</a>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="comment-respond" id="respond">
+
+								<form class="comment-form topmargin_20" id="commentform" method="post" action="./">
+									<div class="row columns_margin_bottom_30">
+										<div class="col-md-4">
+											<p class="comment-form-author">
+												<label for="author">Name
+													<span class="required">*</span>
+												</label>
+												<!-- <i class="rt-icon2-user-outline"></i> -->
+												<input type="text" aria-required="true" size="30" value="" name="author" id="author" class="form-control" placeholder="Full Name">
+											</p>
+										</div>
+										<div class="col-md-4">
+											<p class="comment-form-email">
+												<label for="comment_email">Email
+													<span class="required">*</span>
+												</label>
+												<!-- <i class="rt-icon2-mail2"></i> -->
+												<input type="email" aria-required="true" size="30" value="" name="comment_email" id="comment_email" class="form-control" placeholder="Emain Address">
+											</p>
+										</div>
+										<div class="col-md-4">
+											<p class="comment-form-phone">
+												<label for="comment_phone">Phone Number
+													<span class="required">*</span>
+												</label>
+												<!-- <i class="rt-icon2-mail2"></i> -->
+												<input type="email" aria-required="true" size="30" value="" name="comment_phone" id="comment_phone" class="form-control" placeholder="Phone Number">
+											</p>
+										</div>
+										<div class="col-md-12">
+											<p class="comment-form-chat">
+												<label for="comment">Comment</label>
+												<!-- <i class="rt-icon2-pencil3"></i> -->
+												<textarea aria-required="true" rows="8" cols="45" name="comment" id="comment" class="form-control" placeholder="Message..."></textarea>
+											</p>
+										</div>
+									</div>
+									<p class="form-submit text-center">
+										<button type="submit" id="submit" name="submit" class="theme_button">Send Commnet</button>
+										<button type="reset" id="reset" class="theme_button">Clear Form</button>
+									</p>
+								</form>
+							</div>
+							<!-- #respond -->
+
+							<div class="comments-area" id="comments">
+								<ol class="comment-list">
+									<li class="comment even thread-even depth-1 parent">
+										<article class="comment-body media">
+											<div class="media-left">
+												<img class="media-object" alt="" src="images/faces/01.jpg">
+											</div>
+											<div class="media-body">
+												<span class="reply">
+													<a href="#respond">
+														<i class="fa fa-reply"></i>
+													</a>
+												</span>
+												<div class="comment-meta darklinks">
+													<a class="author_url" rel="external nofollow" href="#">Birdie Byrd</a>
+												</div>
+												<p>First Level Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+												<span class="comment-date">
+													<time datetime="2017-01-08T15:05:23+00:00" class="entry-date">December 26, 2016</time>
+												</span>
+											</div>
+										</article>
+										<!-- .comment-body -->
+
+										<ol class="children">
+											<li class="comment byuser odd alt depth-2 parent">
+												<article class="comment-body media">
+													<div class="media-left">
+														<img class="media-object" alt="" src="images/faces/02.jpg">
+													</div>
+													<div class="media-body">
+														<span class="reply">
+															<a href="#respond">
+																<i class="fa fa-reply"></i>
+															</a>
+														</span>
+														<div class="comment-meta darklinks">
+															<a class="author_url" rel="external nofollow" href="#">Cornelia Thornton</a>
+														</div>
+														<p>Second Level Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+														<span class="comment-date">
+															<time datetime="2017-01-08T15:05:23+00:00" class="entry-date">December 26, 2016</time>
+														</span>
+													</div>
+												</article>
+												<!-- .comment-body -->
+
+												<ol class="children">
+													<li class="comment byuser even depth-3">
+														<article class="comment-body media">
+															<div class="media-left">
+																<img class="media-object" alt="" src="images/faces/03.jpg">
+															</div>
+															<div class="media-body">
+																<span class="reply">
+																	<a href="#respond">
+																		<i class="fa fa-reply"></i>
+																	</a>
+																</span>
+																<div class="comment-meta darklinks">
+																	<a class="author_url" rel="external nofollow" href="#">Alberta Parker</a>
+																</div>
+																<p>Third Level Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+
+																<span class="comment-date">
+																	<time datetime="2017-01-08T15:05:23+00:00" class="entry-date">December 26, 2016</time>
+																</span>
+															</div>
+														</article>
+														<!-- .comment-body -->
+													</li>
+													<!-- #comment-## -->
+												</ol>
+												<!-- .children -->
+											</li>
+											<!-- #comment-## -->
+										</ol>
+										<!-- .children -->
+									</li>
+									<!-- #comment-## -->
+
+								</ol>
+								<!-- .comment-list -->
+							</div>
+							<!-- #comments -->
+
+
+						</div>
+						<!--eof .col-sm-8 (main content)-->
+
+						<div class="col-sm-4">
+
+							<div class="panel-group" id="accordion">
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+												Client
+											</a>
+										</h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<div class="media bottommargin_20">
+												<div class="media-left">
+													<a href="#">
+														<img src="images/team/03.jpg" class="img-circle" alt="">
+													</a>
+												</div>
+												<div class="media-body">
+													<h5 class="muli small-text bottommargin_0">Jim Morris</h5>
+													<span class="highlight">Manager</span>
+												</div>
+											</div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<div class="social-icons">
+												<a class="social-icon soc-facebook color-icon" href="#" title="" data-toggle="tooltip" data-original-title="Facebook"></a>
+												<a class="social-icon soc-twitter color-icon" href="#" title="" data-toggle="tooltip" data-original-title="Twitter"></a>
+												<a class="social-icon soc-google color-icon" href="#" title="" data-toggle="tooltip" data-original-title="Google"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+												Categories
+											</a>
+										</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<ul class="list2 darklinks">
+												<li>
+													<a href="#">Lorem</a>
+												</li>
+												<li>
+													<a href="#">Consectetur</a>
+												</li>
+												<li>
+													<a href="#">Adipisicing</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+												Services
+											</a>
+										</h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse in">
+										<div class="panel-body">
+											Consectetur Adipisicing Aliquyam
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<!-- eof aside -->
+
+					</div>
+				</div>
+			</section>
+
+
+			<footer class="page_footer ds section_padding_top_65 section_padding_bottom_50 columns_margin_bottom_40">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="fadeInUp">
+
+							<a href="./" class="logo">
+								<img src="images/logo.png" alt="">
+								<span class="logo_text">
+									<span class="highlight">24/7 TOWY</span>
+									<span>Towing Services</span>
+								</span>
+							</a>
+
+							<p>
+								Shank duis pancetta kevin ullamco tempor short loin pig lorem officia ut ham hock incididunt irure drumstick sage ball tip tri-tip.
+							</p>
+
+							<p>
+								<a href="#" class="social-icon theme-color-icon soc-twitter"></a>
+								<a href="#" class="social-icon theme-color-icon soc-facebook"></a>
+								<a href="#" class="social-icon theme-color-icon soc-google"></a>
+								<a href="#" class="social-icon theme-color-icon soc-linkedin"></a>
+								<a href="#" class="social-icon theme-color-icon soc-pinterest"></a>
+							</p>
+
+						</div>
+
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="fadeInUp">
+							<div class="topmargin_15 columns_margin_0">
+								<div class="widget widget_pages">
+
+									<h3 class="widget-title">Useful
+										<strong>Links</strong>
+									</h3>
+									<hr class="divider_30_3 zebra_bg divider_left">
+									<div class="row columns_padding_0 columns_margin_0">
+										<div class="col-xs-6">
+											<ul class="greylinks">
+												<li>
+													<a href="about.html">About</a>
+												</li>
+												<li>
+													<a href="services.html">Services</a>
+												</li>
+												<li>
+													<a href="gallery-tile.html">Gallery</a>
+												</li>
+												<li>
+													<a href="404.html">404</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xs-6">
+											<ul class="greylinks">
+												<li>
+													<a href="faq.html">FAQ</a>
+												</li>
+												<li>
+													<a href="shortcodes_typography.html">Typography</a>
+												</li>
+												<li>
+													<a href="blog-right.html">Blog</a>
+												</li>
+												<li>
+													<a href="contact.html">Contacts</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-3 col-sm-6 to_animate" data-animation="fadeInUp">
+							<div class="widget widget_text topmargin_15">
+								<h3 class="widget-title">Get in
+									<strong>Touch</strong>
+								</h3>
+								<hr class="divider_30_3 zebra_bg divider_left">
+								<div class="media small-teaser">
+									<div class="media-left">
+										<i class="fa fa-map-marker highlight fontsize_18"></i>
+									</div>
+									<div class="media-body">
+										2551 Alfred Drive Brooklyn, NY
+									</div>
+								</div>
+								<div class="media small-teaser">
+									<div class="media-left">
+										<i class="fa fa-envelope highlight fontsize_18"></i>
+									</div>
+									<div class="media-body greylinks">
+										<a href="mailto:your@mail.com">support@towy.com</a>
+									</div>
+								</div>
+								<div class="media small-teaser">
+									<div class="media-left">
+										<i class="fa fa-phone highlight fontsize_18"></i>
+									</div>
+									<div class="media-body">
+										718-250-4467
+									</div>
+								</div>
+								<div class="media small-teaser">
+									<div class="media-left">
+										<i class="fa fa-clock-o highlight fontsize_18"></i>
+									</div>
+									<div class="media-body">
+										24 hours a day, 7 days a week
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-12 to_animate" data-animation="fadeInUp">
+							<div class="topmargin_15">
+								<div class="widget widget_twitter">
+									<h3 class="widget-title">Latest
+										<strong>Tweets</strong>
+									</h3>
+									<hr class="divider_30_3 zebra_bg divider_left">
+									<div class="twitter"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="ds ms page_copyright section_padding_15">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="lightfont">24/7 Towy - Towing Services
+								<i class="fa fa-heart highlight" aria-hidden="true"></i> All Rights Reserved &copy; 2017</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
