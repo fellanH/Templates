@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Meta Data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart — Boutique</title>
+
+  <!-- Site Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/img/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="assets/img/icons/manifest.json">
+  <link rel="mask-icon" href="assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="assets/img/icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="assets/img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Dependency Styles -->
+  <link rel="stylesheet" href="dependencies/loaders.css/loaders.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/7-stroke/css/pe-icon-7-stroke.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/animate.css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/Swiper/css/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="dependencies/magnific-popup/magnific-popup.css" type="text/css">
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+  <!-- Google Web Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,700,500,600|Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body id="shopping-cart-v1" class="shopping-cart-v1" data-style="default">
+
+  <div id="preloader">
+    <div class="loader-inner line-scale-pulse-out"></div>
+  </div><!-- /#preloader -->
+
+  <div id="site">
+
+    <!--=================================
+    =            Site Header            =
+    ==================================-->
+    <header id="masthead" class="site-header">
+      <div class="container">
+        <div class="header-middle-area">
+          <div class="site-menu style-two">
+            <div class="menu-toggle" data-dt-toggle="menu-style-2-open" data-dt-toggle-false="search-form-open" aria-expanded="false">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div><!-- /.menu-toggle -->
+
+            <div id="secondary-menu" class="menu-overlay-full" role="navigation">
+              <div class="container">
+                <div id="secondary-menu-container" class="secondary-menu">
+                  <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="category-with-sidebar.html">Categories</a></li>
+                    <li><a href="category-with-page-header.html">New Arrivals</a></li>
+                    <li><a href="lookbooks.html">Lookbook</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div><!-- /#secondary-menu-container -->
+
+                <div class="footer-with-social">
+                  <ul class="list-inline">
+                    <li><a href="#facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#pinterest"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="#google-plus"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+
+                  <div class="copyright-info">
+                    Copyright &copy; 2016 - All Rights Reserved
+                  </div><!-- /.copyright-info -->
+                </div><!-- /.footer-with-social -->
+              </div><!-- /.container -->
+            </div><!-- /#menu-secondary.menu-overlay-full -->
+          </div><!-- /.site-menu-two -->
+
+          <div class="site-branding">
+            <a href="index.html" id="site-logo">
+              <img class="normal-logo" src="assets/img/logo.png" alt="Boutique">
+              <img class="transparent-logo" src="assets/img/logo-transparent.png" alt="Boutique">
+            </a>
+          </div><!-- /.site-branding -->
+
+          <div class="site-menu-icon">
+            <ul class="list-inline">
+              <li>
+                <a href="shopping-cart.html">
+                  <i class="pe-7s-shopbag"></i>
+                  <span class="badge">5</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-dt-toggle="search-form-open" data-dt-toggle-false="menu-style-2-open">
+                  <i class="pe-7s-search"></i>
+                  <i class="icon-close"></i>
+                </a>
+                <div class="site-overlay-search">
+                  <div class="container">
+                    <form role="search" method="get">
+                      <input type="text" value="" placeholder="Search here..." name="s" id="s"  />
+                    </form>
+                  </div><!-- /.container -->
+                </div><!-- /.site-overlay-search -->
+              </li>
+            </ul>
+          </div><!-- /.site-menu-icon -->
+        </div><!-- /.header-middle-area -->
+      </div><!-- /.container -->
+    </header><!-- /#masthead -->
+    <div id="header-fake-mask"></div>
+
+    <!--=================================
+    =            Page header            =
+    ==================================-->
+    <div class="container">
+      <ol class="site-breadcrumbs text-center">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">clothing</a></li>
+        <li class="active">Slim fit Suit</li>
+      </ol>
+    </div><!-- /.container -->
+
+    <!--===================================
+    =            Shopping Cart            =
+    ====================================-->
+    <section id="site-shopping-cart" class="site-shopping-cart">
+      <div class="container">
+        <div class="site-cart-form">
+          <form action="#" method="post">
+            <table class="cart-table" cellspacing="0">
+              <thead>
+                <tr>
+                  <th class="product-thumbnail">Product</th>
+                  <th class="product-name">&nbsp;</th>
+                  <th class="product-price">Price</th>
+                  <th class="product-quantity">Quantity</th>
+                  <th class="product-subtotal">Total</th>
+                  <th class="product-remove">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="cart_item">
+
+                  <td class="product-thumbnail">
+                    <a href="#">
+                      <img src="static/sections/shopping-cart/01.jpg" alt="Cart Item 1">
+                    </a>
+                  </td>
+
+                  <td class="product-name" data-title="Product">
+                    <a href="#">Happy Ninja</a>
+                  </td>
+
+                  <td class="product-price" data-title="Price">
+                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>35.00</span>
+                  </td>
+
+                  <td class="product-quantity" data-title="Quantity">
+                    <div class="quantity">
+                      <input type="number" step="1" min="0" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+
+                  </td>
+
+                  <td class="product-subtotal" data-title="Total">
+                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>35.00</span>
+                  </td>
+
+                  <td class="product-remove">
+                    <a href="#" class="remove" title="Remove this item"><i class="fa fa-trash-o"></i></a>
+                  </td>
+                </tr>
+                <tr class="cart_item">
+
+                  <td class="product-thumbnail">
+                    <a href="#">
+                      <img src="static/sections/shopping-cart/02.jpg" alt="Cart Item 2">
+                    </a>
+                  </td>
+
+                  <td class="product-name" data-title="Product">
+                    <a href="#">Happy Ninja</a>
+                  </td>
+
+                  <td class="product-price" data-title="Price">
+                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>35.00</span>
+                  </td>
+
+                  <td class="product-quantity" data-title="Quantity">
+                    <div class="quantity">
+                      <input type="number" step="1" min="0" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+
+                  </td>
+
+                  <td class="product-subtotal" data-title="Total">
+                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>35.00</span>
+                  </td>
+
+                  <td class="product-remove">
+                    <a href="#" class="remove" title="Remove this item"><i class="fa fa-trash-o"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="6" class="actions">
+
+                    <div class="cart-actions">
+                      <div class="coupon">
+                        <label for="coupon_code">Coupon:</label>
+                        <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code">
+                        <input type="submit" name="apply_coupon" value="Apply Coupon">
+                      </div>
+
+                      <div class="action-btn">
+                        <input type="submit" class="alt" name="update_cart" value="Update Cart">
+                        <input type="submit" class="alt" name="clear_cart" value="Clear Cart">
+                      </div><!-- /.action-btn -->
+                    </div><!-- /.cart-actions -->
+
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </form>
+        </div><!-- /.site-cart-form -->
+
+        <div class="site-cart-procced-checout">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="shipping-methods">
+                <h2>Estimate Shipping</h2>
+
+                <form action="#">
+                  <select name="calc_shipping_country" id="calc_shipping_country">
+                    <option value="">Select a country</option>
+                    <option value="BD">Banldesh</option>
+                    <option value="US">USA</option>
+                  </select>
+                  <select name="calc_shipping_country" id="calc_shipping_country">
+                    <option value="">Sate / Province</option>
+                    <option value="BD">Nawabganj</option>
+                    <option value="US">Dhaka</option>
+                  </select>
+
+                  <input type="text" name="city" id="calc_shipping_city" placeholder="City">
+                  <input type="text" name="city" id="calc_shipping_city" placeholder="Zip / Postal code">
+
+                  <input type="submit" name="shipping_submit" id="calc_shipping_submit">
+                </form>
+              </div><!-- /.shipping-methods -->
+            </div><!-- /.col-md-6 -->
+            <div class="col-md-6">
+              <div class="cart-checkout cart_totals calculated_shipping">
+
+                <h2>Cart Totals</h2>
+
+                <table cellspacing="0" class="shop_table shop_table_responsive">
+                  <tbody>
+                    <tr class="cart-subtotal">
+                      <th>Subtotal</th>
+                      <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>12.00</span></td>
+                    </tr>
+                    <tr class="shipping">
+                      <th>Shipping</th>
+                      <td data-title="Shipping">
+                        <ul id="shipping_method">
+                          <li>
+                            <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate1" value="flat_rate:1" class="shipping_method">
+                            <label for="shipping_method_0_flat_rate1">Flat Rate: <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25.00</span></label>
+                          </li>
+                          <li>
+                            <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_free_shipping2" value="free_shipping:2" class="shipping_method" checked="checked">
+                            <label for="shipping_method_0_free_shipping2">Free Shipping</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_local_pickup3" value="local_pickup:3" class="shipping_method">
+                            <label for="shipping_method_0_local_pickup3">Local Pickup</label>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr class="tax-rate tax-rate-bd-vat-1">
+                      <th>VAT</th>
+                      <td data-title="VAT"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>1.80</span></td>
+                    </tr>
+                    <tr class="order-total">
+                      <th>Total</th>
+                      <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>13.80</span></strong> </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="wc-proceed-to-checkout">
+                  <a href="#" class="checkout-button button alt wc-forward">Proceed to Checkout</a>
+                </div>
+              </div>
+            </div><!-- /.col-md-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.site-cart-procced-checout -->
+      </div><!-- /.container -->
+    </section><!-- /#site-shopping-cart -->
+
+    <!--==================================
+    =            Clients Logo            =
+    ===================================-->
+    <section id="site-clients-logo" class="site-clients-logo static-logos">
+      <div class="container">
+        <div class="static-logos-container">
+          <div class="logo-item">
+            <a href="#" class="partner-logo"><img src="static/sections/clients-logo/01.png" alt="Client Logo"></a>
+          </div><!-- /.logo-item -->
+          <div class="logo-item">
+            <a href="#" class="partner-logo"><img src="static/sections/clients-logo/02.png" alt="Client Logo"></a>
+          </div><!-- /.logo-item -->
+          <div class="logo-item">
+            <a href="#" class="partner-logo"><img src="static/sections/clients-logo/03.png" alt="Client Logo"></a>
+          </div><!-- /.logo-item -->
+          <div class="logo-item">
+            <a href="#" class="partner-logo"><img src="static/sections/clients-logo/04.png" alt="Client Logo"></a>
+          </div><!-- /.logo-item -->
+          <div class="logo-item">
+            <a href="#" class="partner-logo"><img src="static/sections/clients-logo/05.png" alt="Client Logo"></a>
+          </div><!-- /.logo-item -->
+        </div><!-- /.static-logos-container -->
+      </div><!-- /.container -->
+    </section><!-- /#site-clients-logo -->
+
+    <!--=================================
+    =            Site Footer            =
+    ==================================-->
+    <footer id="site-footer" class="site-footer style-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="site-widget">
+              <h3>Our Services</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Return</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Terms &amp; Condition</a></li>
+              </ul>
+            </div><!-- /.site-widget -->
+          </div><!-- /.col-md-3 -->
+
+          <div class="col-md-3 col-sm-6">
+            <div class="site-widget">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+                <li><a href="#">Tumblr</a></li>
+              </ul>
+            </div><!-- /.site-widget -->
+          </div><!-- /.col-md-3 -->
+
+          <div class="col-md-3 col-sm-6">
+            <div class="site-widget">
+              <h3>Address</h3>
+              <div class="site-widget-address">
+                5701 Outlet at Tejon Pkwy, Tejon <br>
+                ranch CA 93203 UK <br>
+                Phone: <strong>(+800) 6868 2268</strong> <br>
+                Email: <strong>Boutique@info.com </strong>
+              </div><!-- /.site-widget-address -->
+            </div><!-- /.site-widget -->
+          </div><!-- /.col-md-3 -->
+
+          <div class="col-md-3 col-sm-6">
+            <div class="site-widget">
+              <h3>Payments</h3>
+              <div class="site-widget-text">
+                <p>Online Secured Payment</p>
+                <img src="static/sections/footer/widgets/payment.png" class="payment-method" alt="Payment Methods">
+
+                <p class="site-widget-copyright">Copyright &copy; 2016 - All Rights Reserved</p>
+              </div><!-- /.site-widget-address -->
+            </div><!-- /.site-widget -->
+          </div><!-- /.col-md-3 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </footer><!-- /#site-footer -->
+
+
+  </div><!-- /#site -->
+
+  <!-- Dependency Scripts -->
+  <script src="dependencies/jquery/jquery.min.js"></script>
+  <script src="dependencies/loaders.css/loaders.css.js"></script>
+  <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dependencies/Swiper/js/swiper.min.js"></script>
+  <script src="dependencies/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="dependencies/isotope/isotope.pkgd.min.js"></script>
+  <script src="dependencies/wow/wow.min.js"></script>
+
+  <!-- Site Scripts -->
+  <script src="assets/js/app.js"></script>
+
+
+
+</body>
+</html>
