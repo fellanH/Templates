@@ -1,0 +1,17 @@
+#u55583
+{
+	-pie-box-shadow: none;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	background-color: #FFFFFF;
+	opacity: 0.97;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=97)";
+	filter: alpha(opacity=97);
+}
+
+.js #u55583.ose_pre_init
+{
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+

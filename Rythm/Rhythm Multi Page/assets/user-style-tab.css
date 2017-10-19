@@ -1,0 +1,163 @@
+﻿/*Muse elements transitions*/
+a,
+p,
+span,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav p,
+nav .MenuItem,
+nav .MenuItemWithSubMenu,
+.Button,
+.Button p,
+.Button div,
+.SSSlideLink,
+.PamphletNextButton,
+.PamphletPrevButton,
+.PamphletCloseButton,
+.popup_element,
+.SSPreviousButton,
+.SSNextButton,
+.popup_element > .clip_frame,
+.AccordionPanelTab,
+.TabbedPanelsTab {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+/*User elements transitions*/
+.name,
+.i-top,
+.title-thumb,
+.desc-thumb,
+.tag,
+.AccordionPanelTab p::before {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+/*User Style*/
+*::-moz-selection {
+    color: #FFF;
+    background: #000 none repeat scroll 0 0;
+}
+
+.i-scroll {
+    -webkit-animation: scroll-down-anim 1s infinite;
+    -moz-animation: scroll-down-anim 1s infinite;
+    -o-animation: scroll-down-anim 1s infinite;
+    animation: scroll-down-anim 1s infinite;
+}
+
+/* Scroll down icon */
+@-webkit-keyframes scroll-down-anim {
+    0% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(45deg) translate(0px, 5px);
+        transform-origin: center;
+    }
+    100% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+}
+
+@-moz-keyframes scroll-down-anim {
+    0% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(45deg) translate(0px, 5px);
+        transform-origin: center;
+    }
+    100% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+}
+
+@-o-keyframes scroll-down-anim {
+    0% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(45deg) translate(0px, 5px);
+        transform-origin: center;
+    }
+    100% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+}
+
+@keyframes scroll-down-anim {
+    0% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(45deg) translate(0px, 5px);
+        transform-origin: center;
+    }
+    100% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+}
+
+@keyframes scroll-down-anim {
+    0% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(45deg) translate(0px, 5px);
+        transform-origin: center;
+    }
+    100% {
+        transform: rotate(45deg) translate(0px, 0px);
+        transform-origin: center;
+    }
+}
+
+/*Services*/
+.section-bg-2 {
+    background-attachment: fixed !important;
+}
+
+/*Accordion*/
+.AccordionPanel {
+    margin-bottom: 10px;
+}
+
+.AccordionPanelTab p::before {
+    content: '';
+    font-family: "FontAwesome";
+    font-size: 15px;
+    color: #999999;
+    position: absolute;
+    right: 15px;
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    text-align: center;
+    width: 10px;
+    display: inline-block;
+}
+
+.AccordionPanelTab.AccordionPanelTabOpen p::before {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+}
