@@ -1,0 +1,190 @@
+##############################################################
+
+# Changelog
+# Rhythm - Multipurpose One/Multi Page Template
+# Full Changelog - http://themeforest.net/item/rhythm-multipurpose-onemulti-page-template/10140354#item-description__changelog
+
+##############################################################
+
+v. 2.9.6 – 13 June 2017
+
+- bug with the contact form in demo "Porduct Designer" was fixed:
+
+--- special-product-designer-about.html was updated
+--- special-product-designer-contact.html was updated
+--- special-product-designer.html was updated
+
+- small bug with side panel on mobile devices was fixed:
+--- file /js/all.js (line 938) was updated
+
+##############################################################
+
+v. 2.9.5 – 10 April 2017
+
+- new demo was added:
+
+--- folder /images/product-designer was added
+--- file special-product-designer.html was added
+--- file special-product-designer-about.html was added
+--- file special-product-designer-contact.html was added
+--- file /css/style.css (line 177) was updated
+
+- intro page page was updated:
+
+--- file intro.html was updated
+--- files /images/intro/intro-40.jpg was added
+
+##############################################################
+
+v. 2.9.4 – 19 January 2017
+
+- IMPORTANT SECURITY UPDATE of PHPMailer class:
+
+--- file /php/class.phpmailer.php was updated
+--- file /php/class.smtp.php was updated
+--- file /php/PHPMailerAutoload.php was updated
+
+- issue with search field in fullscreen menu was fixed:
+--- file /css/style-responsive.css (line 808) was updated
+
+
+##############################################################
+
+v. 2.9.3 – 21 December 2016
+
+- issue with HTML validation was fixed:
+--- all HTML files (Favicons section) were updated
+
+##############################################################
+
+v. 2.9.2 – 3 December 2016
+
+- small bug with accordion was fixed:
+--- file /js/all.js (line 399) was updated
+
+##############################################################
+
+v. 2.9.1 – 3 October 2016
+
+- small bug with sidebar in RTL version was fixed:
+--- folder /www-rtl/js/all.js was updated
+
+- documentation was updated
+
+##############################################################
+
+v. 2.9 – 3 July 2016
+
+- new cv/resume demo was added:
+
+--- folder /images/cv-resume was added
+--- file special-cv-resume.html was added
+
+- intro page page was updated:
+
+--- file intro.html was updated
+--- files /images/intro/intro-39.jpg was added
+
+- Google Maps API Key was added:
+--- all HTML files were updated (scripts including in the end of the documents)
+
+- documentation was updated
+
+##############################################################
+
+v. 2.8 – 14 June 2016
+
+- new barbershop demo was added:
+
+--- folder /images/barbershop was added
+--- file special-barbershop.html was added
+--- file special-barbershop-about.html was added
+--- file special-barbershop-gallery.html was added
+--- file special-barbershop-pricing.html was added
+--- file special-barbershop-contact.html was added
+
+- intro page page was improved:
+
+--- file /css/style.css (line 5581) was updated
+--- file intro.html was updated
+--- files /images/intro/intro-22.jpg - /images/intro/intro-37.jpg were updated
+--- files /images/intro/intro-38.jpg was added
+
+##############################################################
+
+v. 2.7.1 – 15 May 2016
+
+- fashion shop demo was added:
+
+--- file special-fashion.html was added
+--- folder /images/fashion was added
+--- file intro.html was updated
+--- file /images/intro/intro-37.jpg was added
+
+- label "new" was added to intro page and mega menu
+
+--- file /css/style.css (line 5567) was updated
+--- all HTML files were updated (mega menu - link "special demos")
+
+- small bug with portfolio filtering was fixed
+--- file /js/all.js (lines 48 and 19) was updated
+
+##############################################################
+
+v. 2.6 – 19 April 2016
+
+- small bug with portfolio filtering was fixed:
+--- file /js/all.js (line 971) was updated
+
+- two finance demos were added:
+
+--- file special-finance-1.html was added
+--- file special-finance-2.html was added
+--- file special-finance-2-about.html was added
+--- file special-finance-2-expertise.html was added
+--- file special-finance-2-portfolio.html was added
+--- file special-finance-2-qa.html was added
+--- file special-finance-2-contact.html was added
+--- folder /images/finance was added
+--- file /css/style.css (lines 2791-2850) was updated
+--- file /css/style-responsive.css (lines 90, 127-137) was updated
+--- file/js/all.js (lines 59, 1117) was updated
+--- file /images/intro/intro-35.jpg was added
+--- file /images/intro/intro-36.jpg was added
+--- file intro.html was updated
+
+##############################################################
+
+v. 2.5 – 30 March 2016
+
+- restaurant demo was added:
+
+--- folder /images/restaurant/ was added
+
+--- file special-restaurant-1.html was added
+--- file special-restaurant-2.html was added  
+--- file special-restaurant-2-about.html was added
+--- file special-restaurant-2-menu.html was added
+--- file special-restaurant-2-gallery.html was added 
+--- file special-restaurant-2-location.html was added
+--- file special-restaurant-2-reservations.html was added  
+  
+--- file /js/contact-reservations.js was added 
+--- file contact_reservations.php was added
+--- file contact_reservations_smtp.php was added 
+--- file /video/video-restaurant.jpg was added
+--- file /video/video-restaurant.mp4 was added
+--- file /video/video-restaurant.ogg was added
+--- file /video/video-restaurant.webm was added
+
+--- file /js/jquery.backgroundvideo.min.js was updated
+--- file /css/style-responsive.css (line 411) was updated
+--- file index-19.html (line 45) was updated
+--- file mp-index-19.html (line 46) was updated
+
+##############################################################
+
+v. 2.4 – 14 February 2016
+
+- RTL version was added:
+--- folder "www-rtl" was added
