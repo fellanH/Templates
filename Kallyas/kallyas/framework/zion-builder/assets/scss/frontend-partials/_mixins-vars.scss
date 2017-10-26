@@ -1,0 +1,140 @@
+// ==============================================
+// Variables
+// ==============================================
+
+// Responsive breakpoints
+$xs: 480;
+$sm: 768;
+$md: 992;
+$lg: 1200;
+$xl: 1440;
+
+
+// ==============================================
+// Mixins
+// ==============================================
+
+// Mixin for clearfix
+// @include clearfix;
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+@mixin reset-clearfix {
+	&:before,
+	&:after {
+		display: none;
+	}
+}
+
+// Mixin for list-reset
+// @include list-reset;
+@mixin list-reset($m: 0, $p: 0) {
+	& { list-style: none; margin: #{$m}px; padding: #{$p}px;}
+}
+
+@mixin fxb-grid($size){
+	// Box
+	.fxb-#{$size}-wrap {flex-wrap:wrap;}
+	.fxb-row-col-#{$size} {flex-direction: column; }
+	// Size
+	.fxb-#{$size}-forth {flex-basis:25%;}
+	.fxb-#{$size}-half {flex-basis:50%;}
+	.fxb-#{$size}-full {flex-basis:100%;}
+	.fxb-#{$size}-basis-auto {flex-basis:auto;}
+	.fxb-#{$size}-grow-0 {flex-grow:0;}
+	.fxb-#{$size}-shrink-0 {flex-shrink:0;}
+	// Align
+	.fxb-#{$size}-end-x {justify-content: flex-end; }
+	.fxb-#{$size}-start-x {justify-content: flex-start; }
+}
+
+// @font-face mixin
+// Bulletproof font-face via Font Squirrel
+// @include fontface('family', 'assets/fonts/', 'myfontname');
+@mixin fontface($font-family, $font-url, $font-name) {
+	@font-face {
+				font: {
+			family: $font-family;
+				style: normal;
+				weight: normal;
+		}
+
+		src: url($font-url + '/' + $font-name + '.eot');
+		src: url($font-url + '/' + $font-name + '.eot#iefix') format('embedded-opentype'),
+			 url($font-url + '/' + $font-name + '.woff') format('woff'),
+			 url($font-url + '/' + $font-name + '.ttf')  format('truetype'),
+			 url($font-url + '/' + $font-name + '.svg#' + $font-name) format('svg');
+	}
+}
+
+@mixin flex-vertical-center(){
+	& {display: flex; align-items: center; justify-content: center; flex-direction: row;}
+}
+
+
+// IMAGE RETINA
+// @include image-2x(/img/image.png, 100%, auto);
+@mixin image-2x($image, $width, $height) {
+	@media (min--moz-device-pixel-ratio: 1.3),
+				 (-o-min-device-pixel-ratio: 2.6/2),
+				 (-webkit-min-device-pixel-ratio: 1.3),
+				 (min-device-pixel-ratio: 1.3),
+				 (min-resolution: 1.3dppx) {
+		background-image: url($image);
+		background-size: $width $height;
+	}
+}
+
+
+// Responsive
+//   @include rMin($md)  { }
+//   @include rMax($md)  { }
+//   @include r($xs, $md)  { }
+
+@mixin rMin($point) {
+ @if $point == $xs {
+	 @media (min-width: #{$xs}px) { @content; }
+ }
+ @if $point == $sm {
+	 @media (min-width: #{$sm}px) { @content; }
+ }
+ @if $point == $md {
+	 @media (min-width: #{$md}px) { @content; }
+ }
+ @if $point == $lg {
+	 @media (min-width: #{$lg}px) { @content; }
+ }
+ @if $point == $xl {
+	 @media (min-width: #{$xl}px) { @content; }
+ }
+}
+
+@mixin rMax($point) {
+ @if $point == $xs {
+	 @media (max-width: #{($xs - 1)}px) { @content; }
+ }
+ @if $point == $sm {
+	 @media (max-width: #{($sm - 1)}px) { @content; }
+ }
+ @if $point == $md {
+	 @media (max-width: #{($md - 1)}px) { @content; }
+ }
+ @if $point == $lg {
+	 @media (max-width: #{$lg - 1}px) { @content; }
+ }
+ @if $point == $xl {
+	 @media (max-width: #{$xl - 1}px) { @content; }
+ }
+}
+
+@mixin r($pointMin, $pointMax) {
+	 @media (min-width: #{$pointMin}px) and (max-width: #{($pointMax - 1)}px) { @content; }
+}

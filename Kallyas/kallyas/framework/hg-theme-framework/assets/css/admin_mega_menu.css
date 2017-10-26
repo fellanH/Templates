@@ -1,0 +1,3 @@
+/* MEGA MENU SPECIFIC */
+.field-enable-mega-menu-headers , .field-enable-mega-menu, .field-enable-mega-menu-smart-area { display: none; }
+.menu-item-depth-1 .field-enable-mega-menu-headers, .menu-item-depth-0 .field-enable-mega-menu { display: block; }

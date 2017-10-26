@@ -1,0 +1,152 @@
+@import "frontend-partials/normalize";
+@import "frontend-partials/_utilities";
+@import "frontend-partials/_buttons";
+@import "frontend-partials/grid";
+@import "frontend-partials/animations";
+@import "frontend-partials/mixins-vars";
+
+/* Background Source for elements */
+.zn-bgSource,
+.zn-bgSource-overlay,
+.zn-bgSource-image,
+.zn-bgSource-video { position: absolute; top:0; left:0; bottom: 0; right:0; width: 100%; height: 100%; overflow: hidden; }
+.zn-bgSource-image { background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed}
+.zn-bgSource-overlay { pointer-events: none;}
+
+// Iframe
+@media (max-width: 767px){
+	.zn-bgSource-iframe > iframe:not(:only-child) {display: none;}
+}
+// Gloss Overlay
+.zn-bgSource-overlayGloss {pointer-events: none; position: absolute; top: 0; left: -43%; background-color: #FFF; width: 100%; transform: skewX(-55deg); height: 100%; transform-origin: 100% 0; opacity: .08;}
+
+// Video Background
+.zn-videoBg {
+	position: absolute; top:0; left:0; bottom: 0; right:0; width: 100%; height: 100%; overflow: hidden; z-index: 0;
+	video, iframe {
+		display: block;
+		max-width: none;
+	}
+	// Hide Video on Mobile
+	@media (max-width: 767px){
+		&:not(:only-child) {display: none;}
+	}
+}
+.zn-videoBg--embed iframe {
+	top: 50% !important; left: 50% !important; transform: translateY(-50%) translateX(-50%) scale(1.002);
+}
+
+// Video Transition
+.zn-bgSource-video .zn-videoBg--fadeIn .evb-video-holder {opacity: 0;}
+.zn-bgSource-video .zn-videoBg--fadeIn.is-loaded .evb-video-holder {animation: revealVideo 1s; animation-fill-mode: forwards;}
+@keyframes revealVideo {
+	0%, 50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+// Video Grid Overlay
+.zn-videoBg-gridOverlay {
+	&::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; z-index: 1; opacity:.4; pointer-events:none;}
+	&.zn-videoBg-gridOverlay--1::after {background-image: linear-gradient(to right top, transparent 33%, black 33%, black 66%, transparent 66% ); background-size: 3px 3px; }
+	&.zn-videoBg-gridOverlay--2::after {background-image: radial-gradient(circle, rgba(0, 0, 0, 1) 25%, transparent 0%); background-size: 4px 4px; opacity: .1; }
+	&.zn-videoBg-gridOverlay--3::after {opacity:1; background: linear-gradient(to bottom, rgba(black,0.3) 0%,transparent 100%);}
+	// Fallbacks
+	.no-csspointerevents &::after,
+	.no-video-overlay &::after {display: none !important;}
+}
+// Poster
+.zn-bgSource-poster {display: none; background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 0; bottom: 0; left: 0; right:0; width: 100%; height: 100%; overflow: hidden; z-index: 0;
+	@media (max-width: 767px){
+		display: block;
+	}
+}
+
+/*
+  Video Controls (used in Kallyas to maintain bkp. compatibility).
+  Not recommended to be used because it's a background and shouldn't
+  need any controls.
+ */
+.zn-videoBg-controls {
+	display: none;
+	@media (min-width:992px){
+		display: block; list-style: none; margin:0; padding:0; position:absolute; top: 30px; right: 50px; z-index: 3; width: 50px; opacity:.1; transition:opacity .2s ease-in;
+		&[data-position="top-left"] {right:auto; left:50px;}
+		&[data-position="top-center"] {right:auto; left:50%; margin-left:-25px;}
+		&[data-position="bottom-right"] {top:auto; right:20px; bottom: 5px;}
+		&[data-position="bottom-left"] {top:auto; right:auto; left:50px; bottom: 5px;}
+		&[data-position="bottom-center"] {top:auto; right:auto; left:50%; bottom: 5px; margin-left:-25px; }
+		&[data-position="middle-right"] {top:50%; margin-top:-25px;}
+		&[data-position="middle-left"] {left:50px; right:auto; top:50%; margin-top:-25px;}
+		&[data-position="middle-center"] {left:50%; right:auto; top:50%; margin-top:-25px; margin-left:-25px;}
+		.zn-videoBg:hover &,
+		#page-header:hover & {opacity:1;}
+		a {width: 50px; height: 50px; display:block; cursor:pointer; color:#fff; text-align: center; line-height: 50px; text-decoration: none; transition: all 0.2s ease-out; opacity: .5;}
+		.btn-audio {opacity:0; visibility: hidden; transform:translateY(-30px); }
+		&:hover .btn-audio {opacity:.7; visibility: visible; transform:translateY(-10px); }
+		.btn-toggleplay {transform:translateY(0); }
+		.btn-toggleplay .paused:before {content:"\e073";}
+		&:hover .btn-toggleplay {transform:translateY(-10px); }
+		a:hover {opacity:1;}
+		.btn-audio .kl-icon {width: 28px; height: 28px; line-height: 28px; }
+		.btn-audio .kl-icon:before {line-height: 29px; }
+		.btn-audio .mute:before {content:"\e036";}
+	}
+}
+
+// Parallax
+.zn-bgSource-imageParallax{
+	top: 0; left:0; right: 0; bottom: 0; height: 100%; overflow: hidden; backface-visibility: hidden; perspective: 1000px; position: absolute; will-change:transform;
+	.zn-bgSource-image{
+		top: 0; left: 0; position: relative; min-width: 100%; min-height: 100%; background-repeat: no-repeat; background-position: 50%; background-size: cover; backface-visibility: hidden; perspective: 1000px; background-attachment: initial;
+	}
+	&.is-fixed {
+		left:-100vw; position: fixed;
+		&.is-visible {left:0;}
+		.zn-bgSource-image {
+			height:100vh;
+		}
+	}
+}
+
+// Button triggering modal video for background-video elements
+.zn-bgSource-videoModal {display: block; position: absolute; left: 50%; transform:translateX(-50%); top: 0; z-index: 99; color:white; border:2px solid currentColor; border-top:0; padding: 0 10px; border-radius:0 0 3px 3px; height: 40px; line-height: 40px; background:rgba(black,0.15); font-size:10px; font-weight:700; font-family:Helvetica,Arial,sans-serif;vertical-align: middle;}
+.zn-bgSource-videoModal:after { content:attr(data-text); display:inline-block; margin-left:10px; }
+.zn-bgSource-videoModal:hover,
+.zn-bgSource-videoModal:focus {color:white;}
+
+
+// Object Parallax
+.zn-objParallax {
+	position: relative;
+	&[class*="zn-objParallax--ease"] {transition-property:transform; transition-duration:.6s;}
+	&--ease-linear {transition-timing-function: ease-out;}
+	&--ease-quad {transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);}
+	&--ease-cubic {transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+	&--ease-quart {transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);}
+	&--ease-quint {transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);}
+}
+
+/* Object Fit */
+.object-fit{
+	&__cover{      object-fit: cover;      }
+	&__fill{       object-fit: fill;       }
+	&__contain{    object-fit: contain;    }
+	&__none{       object-fit: none;       }
+	&__scale-down{ object-fit: scale-down; }
+}
+
+
+.znb-icon { display: inline-block; fill: currentColor; stroke-width: 0; stroke: currentColor; height: 1em; position: relative; top: -0.0625em; vertical-align: middle; width: 1em; }
+
+
+// Text Alignments
+$alignments: ('left', 'center', 'right');
+$breakpoints: (md: $lg, sm: $md, xs: $sm);
+@each $b,$c in $breakpoints{
+	@include rMax($c){
+		@each $a in $alignments {
+			.text-#{$b}-#{$a} {
+				text-align:#{$a};
+			}
+		}
+	}
+}

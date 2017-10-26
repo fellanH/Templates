@@ -1,0 +1,214 @@
+// Delays
+
+.is-animating {
+	visibility:visible;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+}
+
+.is-animating.zn-anim-duration-- {
+	&500 {animation-duration:500ms;}
+	&1000 {animation-duration:1000ms;}
+	&2000 {animation-duration:2000ms;}
+}
+
+@keyframes zn-anim-fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.zn-anim-fadeIn {
+	animation-name: zn-anim-fadeIn;
+}
+
+@keyframes zn-anim-fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -30%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.zn-anim-fadeInDown {
+	animation-name: zn-anim-fadeInDown;
+}
+
+@keyframes zn-anim-fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(-30%, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.zn-anim-fadeInLeft {
+	animation-name: zn-anim-fadeInLeft;
+}
+
+
+@keyframes zn-anim-fadeInRight {
+	from {
+		opacity: 0;
+		transform: translate3d(30%, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.zn-anim-fadeInRight {
+	animation-name: zn-anim-fadeInRight;
+}
+
+@keyframes zn-anim-fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 30%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.zn-anim-fadeInUp {
+	animation-name: zn-anim-fadeInUp;
+}
+
+@keyframes zn-anim-bounceIn {
+	from, 20%, 40%, 60%, 80%, to {
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		transform: scale3d(.3, .3, .3);
+	}
+
+	20% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+
+	40% {
+		transform: scale3d(.9, .9, .9);
+	}
+
+	60% {
+		opacity: 1;
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
+
+	80% {
+		transform: scale3d(.97, .97, .97);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.zn-anim-bounceIn {
+	animation-name: zn-anim-bounceIn;
+}
+
+@keyframes zn-anim-zoomIn {
+	from {
+		opacity: 0;
+		transform: scale3d(.3, .3, .3);
+	}
+
+	50% {
+	opacity: 1;
+	}
+}
+
+.zn-anim-zoomIn {
+	animation-name: zn-anim-zoomIn;
+}
+
+@keyframes zn-anim-flipInX {
+	from {
+		transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+
+	40% {
+		transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+		animation-timing-function: ease-in;
+	}
+
+	60% {
+		transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+	opacity: 1;
+	}
+
+	80% {
+		transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+	}
+
+	to {
+		transform: perspective(400px);
+	}
+}
+
+.zn-anim-flipInX {
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-name: zn-anim-flipInX;
+}
+
+@keyframes zn-anim-flipInY {
+	from {
+		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+
+	40% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+		animation-timing-function: ease-in;
+	}
+
+	60% {
+		transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+		opacity: 1;
+	}
+
+	80% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+	}
+
+	to {
+		transform: perspective(400px);
+	}
+}
+
+.zn-anim-flipInY {
+	backface-visibility: visible !important;
+	animation-name: zn-anim-flipInY;
+}
+
+
+.zn-animateInViewport {visibility: hidden; animation-name: none;}
+
+/* Animate float */
+.zn-spIcon--animFloat .zn-iconIco {animation-duration: 1s; animation-name: floatingAnim; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function:ease-in-out;}
+@keyframes floatingAnim {from {transform:translateY(-8px); } to {transform:translateY(8px); } }

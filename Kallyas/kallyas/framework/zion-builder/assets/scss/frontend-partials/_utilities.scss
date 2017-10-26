@@ -1,0 +1,77 @@
+// Box Shadows
+$shadows: (
+	1: (0 1px 3px rgba(black,0.12), 0 1px 2px rgba(black,0.24)),
+	2: (0 3px 6px rgba(black,0.16), 0 3px 6px rgba(black,0.23)),
+	3: (0 10px 20px rgba(black,0.19), 0 6px 6px rgba(black,0.23)),
+	4: (0 14px 28px rgba(black,0.25), 0 10px 10px rgba(black,0.22)),
+	5: (0 19px 38px rgba(black,0.30), 0 15px 12px rgba(black,0.22)),
+	6: (0 40px 120px -20px rgba(black,0.6)),
+);
+@each $m,$s in $shadows{
+	.znBoxShadow-#{$m},
+	.znBoxShadow--hov-#{$m}:hover {box-shadow: $s;}
+}
+[class*="znBoxShadow-"] {z-index:1}
+[class*="znBoxShadow--hov-"] {transition: all 0.3s cubic-bezier(.25,.8,.25,1);}
+
+// Text Alignments:
+$alignments :(
+	1: left,
+	2: center,
+	3: right,
+);
+@each $i, $alignment in $alignments{
+	.text-#{$alignment} { text-align: $alignment}
+}
+
+// Transitions:
+@mixin zn-trans(){
+	transition: all .3s ease-out;
+}
+.zn-trans-zoomin,
+.zn-trans-zoomout {@include zn-trans;}
+.zn-trans-zoomin:active,.zn-trans-zoomin:focus,.zn-trans-zoomin:hover {transform: scale(1.1)}
+.zn-trans-zoomout:active,.zn-trans-zoomout:focus,.zn-trans-zoomout:hover {transform: scale(0.9)}
+.zn-trans-fadein {@include zn-trans; opacity:.7;}
+.zn-trans-fadein:active,.zn-trans-fadein:focus,.zn-trans-fadein:hover {opacity:1;}
+.zn-trans-fadeout {@include zn-trans; opacity:1;}
+.zn-trans-fadeout:active,.zn-trans-fadeout:focus,.zn-trans-fadeout:hover {opacity:.7;}
+
+// Accordion
+.collapse {
+	display: none
+}
+.collapse.in {
+	display: block
+}
+tr.collapse.in {
+	display: table-row
+}
+tbody.collapse.in {
+	display: table-row-group
+}
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition-property: height, visibility;
+	-o-transition-property: height, visibility;
+	transition-property: height, visibility;
+	-webkit-transition-duration: .35s;
+	-o-transition-duration: .35s;
+	transition-duration: .35s;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function: ease
+}
+
+// Embed Responsive Utility
+// Pulled from Bootstrap
+.embed-responsive{position:relative;display:block;height:0;padding:0;overflow:hidden}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video{position:absolute;top:0;left:0;bottom:0;height:100%;width:100%;border:0}
+.embed-responsive-16by9{padding-bottom:56.25%}
+.embed-responsive-4by3{padding-bottom:75%}
