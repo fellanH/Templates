@@ -1,0 +1,16 @@
+/* TEAM */
+	Title:    Kallyas Template
+	Author:   Hogash Studio
+	Site:     http://www.hogash.com
+	Twitter:  @hogash
+	Location: Europe
+
+/* THANKS */
+	Hogash Studio Team
+	
+/* SITE */
+	Last update: 09/05/2014
+	Standards:   HTML5, CSS3
+	CMS:         -
+	Language:    English (EN)
+	Components:  jQuery, Google Fonts, Modernizr

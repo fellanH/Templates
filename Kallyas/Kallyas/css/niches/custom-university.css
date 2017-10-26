@@ -1,0 +1,9 @@
+section,
+footer {top: 100%;}
+.btn-lined.lined-white {color: #fff; border-color: #fff;}
+.kl-iconbox__icon.small {height: 90px;}
+.testimonial_slider.quoter-style .testimonialbox .who strong {color: #64a264;}
+.testimonial_slider.quoter-style .testimonialbox .who,
+.testimonialbox .tcontent {color: #fff;}
+.testimonial_slider.quoter-style .cfs--pagination a.selected {background: #64a264;}
+.tcolor {color: #64a264 !important;}

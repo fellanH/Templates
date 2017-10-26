@@ -1,0 +1,136 @@
+New in 4.3.3
+==================================
+- fixed contact form (php_helpers/_contact-process.php)
+- fixed contact form response in (js/kl-scripts.js)
+
+
+
+New in 4.3.2
+==================================
+- fixed contact form (php_helpers/_contact-process.php)
+
+
+
+New in 4.3.1
+==================================
++ updated Revolution Slider plugin
++ added new homepage "Atlas homepage" (atlas-homepage.html)
++ added new homepage "Atlas homepage - alternative" (atlat-homepage-alt.html)
++ added new page "Sub-header Animated Particles" (subheader-adnimated.html)
++ added new niche homepage "Automotive" (_17-automotive-homepage.html)
+
+
+
+New in 4.3
+==================================
++ added new static content "Heat distortion" (static-content-heat-distortion.html)
++ added new static content "Isometric grids - scroll" (static-content-isometric-grids-scroll.html)
++ added new static content "Isometric grids - static" (static-content-isometric-grids-static.html)
++ added new static content "Point of interest" (static-content-point-of-interest.html)
+
+
+
+New in 4.2
+==================================
++ added new niche homepage "Charity"  (_13-charity-homepage.html)
++ added new niche homepage "Gym" (_14-gym-homepage.html)
++ added new niche homepage "Cargo" (_15-cargo-homepage.html)
++ added new niche homepage "Lawyer" (_16-lawyer-homepage.html)
++ added new homepage "Eos" (eos-homepage.html)
++ added new static content "Immersive Video" (static-content-immersive-video.html)
+
+
+
+New in 4.1
+=================================
+- fixed menu sub-item hover issue in header style 2
+- fixed rain effect custom sub-header (file changed js/plugins/rain-effect.js)
+- fixed shop product category page aligned items in FireFox browser (file changed css/template.css)
+- twekead google maps marker position and scroll bug + added label on markers (files changed: images/map-marker.png | js/plugins/jquery.gmap.min.js | js/trigger/kl-google-maps.js | js/trigger/kl-google-maps-style2.js | js/trigger/kl-google-maps-style2.js)
+- replaced parallax scrolling background plugin (file changed js/kl-plugins.js at line 166 and js/kl-scripts.js at line 1209)
+
++ added new element photo gallery alternative style (elements-photo-gallery-alt.html)
++ added new element image boxes carousel style (elements-image-boxes-carousel.html)
++ added new element images boxes carousel - alternative style (elements-image-boxes-carousel-alt.html)
++ added new element parallax section with carousel (elements-parallax-carousel.html)
++ added new element world map offices (elements-world-map-offices.html)
++ added new element partners testimonials fancy style (elements-partners-testimonials-fancy.html)
++ added new element sub-header animated mask on scroll (subheader-animated-mask.html)
++ added new element team boxes carousel (elements-team-carousel.html)
+
++ added new style 5 for accordions in page (elements-accordions.html)
++ added new style for services boxes element in page (elements-services.html)
++ added new style (tablets) for devices element in page (elements-devices.html)
++ added new style 5 for element steps box in page (elements-steps-box.html)
++ added new style for testimonials slider in page (elements-partners-testimonials.html)
+
++ added new page Photo gallery alternative style (photo-gallery-alt.html)
++ added new page "Latest news" (latest-news.html)
++ added new page "About me" (about-me.html)
++ added new page "About us - alt" (about-us-alt.html)
+
++ added new niche homepage "Dental clinic" (_9-dental-clinic-homepage.html)
++ added new niche homepage "University" (_10-university-homepage.html)
++ added new niche homepage "Interior design" (_11-interior-homepage.html)
++ added new niche homepage "Architecture" (_12-architecture-homepage.html)
+
+
+
+New in 4.0
+=================================
++ added Artemis homepage
++ added header style 14 (located in "components mark-up/headers/header-style.14.html" from Artemis Homepage)
++ added iOS slider demo "Mood" style (sliders-ios-slider-mood.html)
++ added new Hero Scene - Product Presentation alternative (static-content-product-presentation-alt.html)
++ added diagram element page (elements-diagram.html)
++ added swipe on sliders based on caroufredsel plugin.
++ added video box element page (elements-video-box.html)
++ added grid photo gallery full width element page (elements-grid-photo-gallery-full-width.html)
++ added media container with custom content element (elements-media-container-custom-content.html)
++ added price list element (elements-price-list.html)
++ added counter numbers element (elements-counter-numbers.html and + js/plugins/jquery.counterup.min.js)
++ added progress bars skills element (elements-progress-bars.html)
++ added title elements styles all in one page (elements-system-elements.html)
+- tweaked responsive menu and added close button (changes in js/kl-scripts.js from line 256 to 374)
+- fixed chaser header active menu scrollspy (changes in js/kl-scripts.js at line 236)
+- fixed diagram element responsivness (changes in js/plugins/raphael_diagram/raphael-min.js and js/plugins/raphael_diagram/init.js)
+
+
+New in 3.9
+=================================
+- updated Visual builder slider addon
+- updated revolution slider plugin
+- added apollo homepage
+- added custom sub-header rain effect = subheader-animated-rain.html
+- added sortable portfolio full width page
+- added carousel portfolio alternative page
+- added disqus plugin on blog post page
+
+
+New in 3.8
+=================================
+- Agency Homepage
+- Static content text play
+- Hover icons element
+- Agency product page
+- Mask style 7 with effect
+- Mask style 7 simple
+- Footer style 4
+
+
+Files changed
+=================================
+added: 
+- homepages-agency.html
+- static-content-text-play.html
+- agency-product-page.html
+- elements-hover-icons.html
+- components mark-up/sub-header masks/mask-style7 and mask-style7 simple
+- components mark-up/footers/footer style 4
+
+changed: 
+- css/template.css
+- css/responsive.css
+- js/kl-scripts.js
+
+

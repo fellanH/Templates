@@ -1,0 +1,18 @@
+.tcolor {color: #fbc42c !important;}
+.bg-default {background-color: #fbc42c;}
+.btn-fullcolor, 
+.btn-fullcolor:focus {background-color: #fbc42c;}
+.btn-fullcolor:hover {background-color: #c59d2e;}
+.btn-fullcolor.btn-skewed:before {background-color: #fbc42c;}
+.btn-fullcolor.btn-skewed:hover:before {background-color: #c59d2e;}
+.kl-cta-ribbon {background-color: #fbc42c;}
+.kl-cta-ribbon .trisvg path {fill: #fbc42c;}
+@media screen and (min-width: 992px) {
+	.main-nav > ul > li > a:before {background-color: #fbc42c;}
+}
+.chaser .main-menu li.active>a {background: #fbc42c !important;}
+.kl-iconbox__icon {width: 50px;}
+.kl-iconbox__title {color: #fbc42c;}
+.fun-fact .kl-icon img {width: 80px; margin: 0 auto; margin-bottom: 15px;}
+.hg_accordion_element.style5 ul.acc-list [data-toggle="collapse"]::before {background-color: #fbc42c;}
+.screenshot-box .left-side h3.title {color: #fbc42c;}

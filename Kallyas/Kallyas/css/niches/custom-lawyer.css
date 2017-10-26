@@ -1,0 +1,13 @@
+.css3panel-title,
+.css3panel-btn-area .btn {font-family: "Cardo","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.custom-position {background-color: #EC4933 !important;}
+.custom-position2 {padding-bottom: 17%;}
+.custom-position2 .kl-iconbox__title,
+.custom-position2 .kl-iconbox__desc {color: #3e3e3e !important;}
+.custom-position2 .kl-iconbox__icon-wrapper {margin-top: 20px;}
+.custom-position2 .kl-iconbox__icon-wrapper img {width: 135px;}
+.tbg {background-color: #EC4933 !important;}
+.processitems .kl-icon img {width: 60px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate3d(-50%, -50%,0); transform: translate3d(-50%, -50%,0);}
+.process-list .processitems li:hover .ico-wrapper > span {background-color: #f2f3f4;}
+.m_title {color: #EC4933;}
+.theHoverBorder:hover {box-shadow: 0 0 0 5px #EC4933 inset;}

@@ -1,0 +1,3 @@
+User-agent: Googlebot 
+Disallow: /cache/
+Disallow: /php-helpers/
